@@ -18,6 +18,4 @@ const requestHandler = (request, response) => {
     });
 };
 
-const server = http.createServer(requestHandler);
-
-server.listen(8080);
+http.createServer(requestHandler).listen(5000);
