@@ -18,4 +18,4 @@ const requestHandler = (request, response) => {
     });
 };
 
-http.createServer(requestHandler).listen(5000);
+http.createServer(requestHandler).listen(process.env.port || 5000);
